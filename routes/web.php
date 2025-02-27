@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::resource('photos', PhotoController::class);
+Route::get('/greeting', [WelcomeController::class,'greeting']);
