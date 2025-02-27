@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/about', function () { 
-    return '2341720033, Muhammad Dimas Ajie Nugroho';
+Route::get('/user/{name}', function ($name) { 
+    return 'Nama saya Muhammad '.$name;
 });
