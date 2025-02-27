@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/user/{name?}', function ($name='John') { 
-    return 'Nama saya '.$name;
+Route::get('/greeting', function () { 
+    return view('hello', ['name' => 'Muhammad Dimas Ajie Nugroho']);
 });
