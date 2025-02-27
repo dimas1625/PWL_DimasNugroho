@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/articles/{id}', function ($Id) { 
-    return 'Halaman Artikel dengan ID '.$Id;
+Route::get('/user/{name?}', function ($name=null) { 
+    return 'Nama saya '.$name;
 });
