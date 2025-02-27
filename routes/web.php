@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () { 
-    return 'Selamat Datang';
+Route::get('/about', function () { 
+    return '2341720033, Muhammad Dimas Ajie Nugroho';
 });
