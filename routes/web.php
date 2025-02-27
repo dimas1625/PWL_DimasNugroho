@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/greeting', function () { 
-    return view('blog.hello', ['name' => 'Andi']);
-});
+Route::get('/hello', [WelcomeController::class, 'hello']);
